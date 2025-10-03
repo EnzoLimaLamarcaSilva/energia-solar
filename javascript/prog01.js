@@ -19,10 +19,10 @@ function principal(){
 
     let EG =  AM / ES  
 
-    console.log(`O valor de energia gerada por dia é: ${EG.toFixed(0)} kwh/dia`)
+    console.log(`A quantidade de placas necessárias é: ${EG.toFixed(0)} `)
   
 
     resposta.innerHTML = ``
-    resposta.innerHTML += `O valor de energia gerada por dia é: ${EG.toFixed(0)} kwh/dia <br>`
+    resposta.innerHTML += `A quantidade de placas necessárias é: ${EG.toFixed(0)}  <br>`
     
 }
