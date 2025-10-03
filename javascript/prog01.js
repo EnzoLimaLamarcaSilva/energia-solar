@@ -1,12 +1,10 @@
 //E=H*A*N
 
-//EG = energia gerada por dia (kWh/dia)
+//EG = Quantidade de placas necessárias
 
-//IS = irradiação solar (kWh/m²/dia)
+//AM = Valor gerado por mês
 
-//AM = área total dos módulos (m²)
-
-//ES = eficiência global do sistema (decimal, ex: 0,18 = 18%)
+//ES = Gasto enegético
 
 
 let resposta = document.getElementById('resposta')
