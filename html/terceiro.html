@@ -19,35 +19,20 @@
     </header>
 
     <main>
-        <h1>Conversão de Irradiação Solar</h1>
-        <section>
-            <label>Irradiação (kWh/m²/dia): 
-                <input id="irr" type="number" step="0.01" value="4.5">
-            </label><br>
+        <h1>Geração de energia por dia:</h1><br><br>
+        <label for="ES"></label>Valor gerado por mês <br>
+        <input type="text" id="ES"><br><br>
 
-            <label>Consumo mensal (kWh): 
-                <input id="consumo" type="number" step="1" value="150">
-            </label><br>
+        <label for="AM"></label>Gasto energético <br>
+        <input type="text" id="AM"><br><br>
 
-            <label>Potência painel (Wp): 
-                <input id="painelWp" type="number" step="1" value="530">
-            </label><br>
 
-            <label>Rendimento do sistema (ex: 0.75 = 75%): 
-                <input id="rendimento" type="number" step="0.01" value="0.75">
-            </label><br>
-
-            <button id="calcular">Calcular</button>
-        </section>
-
-        <section>
-            <h2>Resultados</h2>
-            <pre id="saida"></pre>
-        </section>
+        <button onclick="principal()">Calcular</button><br><br>
+        <div id="resposta"></div>
     </main>
 
     <footer>
-        <p>Todos direitos &copy; reservados a Enzo Silva&trade;<br>
+        <br><p>Todos direitos &copy; reservados a Enzo Silva&trade;<br>
         Agradecimento especial para José "Maçaneiro" Carlos "Filho" Izabeli "Souza" e SENAI</p>
     </footer>
 </body>
