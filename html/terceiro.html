@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../javascript/prog01.js"defer></script>
-    <title>Energia solar - Conversão</title>
+    <script src="../javascript/prog01.js" defer></script>
+    <title>Energia Solar - Economia Mensal</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="../index.html">Principal</a>
-            <a href="./primeiro.html">Fabricantes</a>
-            <a href="./segundo.html">Sistema</a>
-            <a href="./terceiro.html" class="ativo">Conversão</a>
-            <a href="./quarto.html">Considerações finais</a>
+            <a href="../primeiro.html">Fabricantes</a>
+            <a href="../segundo.html">Sistema</a>
+            <a href="../terceiro.html" class="ativo">Conversão</a>
+            <a href="../quarto.html">Considerações finais</a>
         </nav>
     </header>
 
     <main>
-        <h1>Geração de energia por dia:</h1><br><br>
-        <label for="ES"></label>Valor gerado por mês <br>
-        <input type="text" id="ES"><br><br>
+        <h1> Economia de Energia Mensal</h1>
+        <br>
 
-        <label for="AM"></label>Gasto energético <br>
-        <input type="text" id="AM"><br><br>
+        <label for="energiaGerada">Energia gerada no mês (kWh)</label><br>
+        <input type="text" id="energiaGerada" placeholder="Ex: 400"><br><br>
 
+        <label for="energiaConsumida">Energia consumida no mês (kWh)</label><br>
+        <input type="text" id="energiaConsumida" placeholder="Ex: 350"><br><br>
 
-        <button onclick="principal()">Calcular</button><br><br>
+        <label for="precoKwh">Preço do kWh (R$)</label><br>
+        <input type="text" id="precoKwh" placeholder="Ex: 0.95" ><br><br>
+
+        <button onclick="principal()">Calcular</button>
+        <br><br>
+
         <div id="resposta"></div>
     </main>
 
     <footer>
-        <br><p>Todos direitos &copy; reservados a Enzo Silva&trade;<br>
-        Agradecimento especial para José "Maçaneiro" Carlos "Filho" Izabeli "Souza" e SENAI</p>
+        <br><p>Todos os direitos &copy; reservados a Enzo Silva&trade;<br>
+        Agradecimento especial para José “Macaneiro” Carlos “Filho”, Izabeli “Souza” e SENAI</p>
     </footer>
 </body>
 </html>
