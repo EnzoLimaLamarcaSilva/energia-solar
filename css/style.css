@@ -34,17 +34,30 @@ a:active{
     border-radius: 4px;
     }
 
+.imgUm img{
+    width: 360px;
+    height: 210px;
+    border-radius: 16px;
+}
+
+.imgDois img{
+    width: 360px;
+    height: 200px;
+    border-radius: 16px;
+}
+
+.imgTres img{
+    width: 360px;
+    height: 200px;
+    border-radius: 16px;
+}
+
 .video-inicial iframe{
     width: 340px;
     height: 340px;
     border-radius: 16px;
 }
 
-.video-dois iframe{
-    width: 340;
-    height: 340px;
-    border-radius: 16px;
-}
 
 .endereco iframe{
     width: 340;

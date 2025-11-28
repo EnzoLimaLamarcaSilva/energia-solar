@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../javascript/prog01.js" defer></script>
+    <script src="../javascript/prog2.js" defer></script>
     <title>Energia Solar - Economia Mensal</title>
 </head>
 
@@ -12,10 +12,10 @@
     <header>
         <nav>
             <a href="../index.html">Principal</a>
-            <a href="../primeiro.html">Fabricantes</a>
-            <a href="../segundo.html">Sistema</a>
-            <a href="../terceiro.html" class="ativo">Conversão</a>
-            <a href="../quarto.html">Considerações finais</a>
+            <a href="./primeiro.html">Fabricantes</a>
+            <a href="./segundo.html">Sistema</a>
+            <a href="./terceiro.html">Cálculo</a>
+            <a href="./quarto.html">Considerações finais</a>
         </nav>
     </header>
 
@@ -23,14 +23,14 @@
         <h1> Economia de Energia Mensal</h1>
         <br>
 
-        <label for="energiaGerada">Energia gerada no mês (kWh)</label><br>
-        <input type="text" id="energiaGerada" placeholder="Ex: 400"><br><br>
+        <label for="consumoAntigo">Consumo Antigo</label><br>
+        <input type="text" id="consumoAntigo" placeholder="Ex: 250 KW/h"><br><br>
 
-        <label for="energiaConsumida">Energia consumida no mês (kWh)</label><br>
-        <input type="text" id="energiaConsumida" placeholder="Ex: 350"><br><br>
+        <label for="consumoAtual">Consumo Atual</label><br>
+        <input type="text" id="consumoAtual" placeholder="Ex: 150 KW/h"><br><br>
 
-        <label for="precoKwh">Preço do kWh (R$)</label><br>
-        <input type="text" id="precoKwh" placeholder="Ex: 0.95" ><br><br>
+        <label for="precoKWh">Preço do kWh (R$)</label><br>
+        <input type="text" id="precoKWh" placeholder="Ex:  R$ 0.75" ><br><br>
 
         <button onclick="principal()">Calcular</button>
         <br><br>
@@ -39,8 +39,10 @@
     </main>
 
     <footer>
-        <br><p>Todos os direitos &copy; reservados a Enzo Silva&trade;<br>
-        Agradecimento especial para José “Macaneiro” Carlos “Filho”, Izabeli “Souza” e SENAI</p>
+        <small>
+            Todos direitos &copy; reservados a Enzo Silva&trade;<br>
+        Agradecimento especial para José "Maçaneiro" Carlos "Filho" Izabeli "Souza" e SENAI
+        </small>
     </footer>
 </body>
 </html>
