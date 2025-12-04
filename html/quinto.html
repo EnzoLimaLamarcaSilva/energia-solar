@@ -18,21 +18,271 @@
         </nav>
     </header>
     <main>
-        <h1>Conceitos básicos</h1><br><br>
-<p>
-    Entrada digital (binário, físico e volts)
-Binário: só entende 0 ou 1.
-<br>
-Físico: um pino do Arduino lê se há sinal ou não.
-<br>
-Volts: no Arduino UNO:
-<br>
-0 digital (LOW) → entre 0 V e ~1,5 V
-<br>
-1 digital (HIGH) → entre 3 V e 5 V
-<br><br><br>
+        <h1>Conceitos básicos</h1><br>
+        <h3>Entrada digital (binário, físico e volts)</h3>
 
-</p>
+        <h5>
+        Binário: só entende 0 ou 1.
+        <br><br>
+        Físico: um pino do Arduino lê se há sinal ou não.
+        <br><br>
+        Volts: no Arduino UNO:
+        <br>
+        0 digital (LOW) → entre 0 V e ~1,5 V
+        <br>
+        1 digital (HIGH) → entre 3 V e 5 V
+        </h5>
+        
+        <br><br>
+        
+        <h3>Saída digital (binário, físico e volts)</h3>
+        
+        <h5>
+        Binário: o Arduino envia nível 0 ou 1.
+        <br><br>
+        Físico: o pino coloca tensão ou não.
+        <br><br>
+        Volts:
+        <br>
+        LOW → 0 V
+        <br>
+        HIGH → 5 V (no Arduino de 5 V, como UNO)
+        </h5>
+        
+        <br><br>
+        
+        <h3>Entrada analógica (binário, físico e volts)</h3>
+        
+        <h5>
+        Binário: o valor analógico é convertido para um número binário pelo ADC.
+        <br><br>
+        Físico: lê tensões variáveis.
+        <br><br>
+        Volts: aceita valores entre 0 V e 5 V (Arduino UNO).
+        <br><br>
+        Resolução: 10 bits (0 – 1023)
+        </h5>
+        
+        <br><br>
+        
+        <h3>Saída analógica (binário, físico e volts)</h3>
+        
+        <h5>
+        Observação: o Arduino não tem saída analógica verdadeira, ele usa PWM.
+        <br><br>
+        Binário: o PWM liga/desliga rapidamente entre 0 e 1.
+        <br><br>
+        Físico: cria uma tensão média perceptível.
+        <br><br>
+        Volts: varia entre 0 V e 5 V dependendo do duty cycle.
+        </h5>
+        
+        <br><br>
+        
+        <h3>O que é Arduino</h3>
+        
+        <h5>
+        Plataforma de prototipagem eletrônica composta por:
+        <br>
+        • placa com microcontrolador  
+        <br>
+        • portas de entrada e saída  
+        <br>
+        • ambiente de programação próprio  
+        <br><br>
+        Usado para eletrônica, robótica e automação.
+        </h5>
+        
+        <br><br>
+        
+        <h3>O que é um microcontrolador</h3>
+        
+        <h5>
+        Um pequeno computador dentro de um chip, contendo:
+        <br>
+        • processador (CPU)  
+        <br>
+        • memória  
+        <br>
+        • entradas e saídas  
+        <br>
+        • conversor analógico-digital (ADC)  
+        <br>
+        • temporizadores  
+        <br><br>
+        Responsável por controlar dispositivos eletrônicos.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Qual o microcontrolador do Arduino</h3>
+        
+        <h5>
+        Modelo: ATmega328P  
+        <br><br>
+        Fabricante: Microchip Technology (antiga Atmel)
+        </h5>
+        
+        <br><br>
+        
+        <h3>Linguagem de programação do Arduino</h3>
+        
+        <h5>
+        Linguagem baseada em C/C++.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Onde o Arduino é programado (IDE)</h3>
+        
+        <h5>
+        Arduino IDE  
+        <br>
+        Também pode ser programado no Arduino Web Editor e PlatformIO.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Tensão e resolução da entrada analógica</h3>
+        
+        <h5>
+        Tensão máxima: 0 a 5 V  
+        <br><br>
+        Resolução: 10 bits (0 a 1023)
+        </h5>
+        
+        <br><br>
+        
+        <h3>Tensão da entrada digital</h3>
+        
+        <h5>
+        LOW = 0 a ~1,5 V  
+        <br>
+        HIGH = acima de ~3 V até 5 V
+        </h5>
+        
+        <br><br>
+        
+        <h3>Tensão da saída digital</h3>
+        
+        <h5>
+        LOW = 0 V  
+        <br>
+        HIGH = 5 V
+        </h5>
+        
+        <br><br>
+        
+        <h3>O que é um multímetro</h3>
+        
+        <h5>
+        Instrumento usado para medir:
+        <br>
+        • tensão (V)  
+        <br>
+        • corrente (A)  
+        <br>
+        • resistência (Ω)  
+        <br>
+        • continuidade  
+        <br><br>
+        Alguns modelos medem capacitância, frequência e temperatura.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Grandezas medidas pelo multímetro</h3>
+        
+        <h5>
+        Tensão (AC/DC)  
+        <br>
+        Corrente (AC/DC)  
+        <br>
+        Resistência  
+        <br>
+        Continuidade  
+        <br>
+        Diodo  
+        <br>
+        Capacitância e temperatura em alguns modelos.
+        </h5>
+        
+        <br><br>
+        
+        <h3>O que é escala de medição</h3>
+        
+        <h5>
+        É o intervalo escolhido para medir uma grandeza.
+        <br>
+        Exemplo:
+        <br>
+        • tensão até 20 V  
+        <br>
+        • resistência até 2 kΩ  
+        <br><br>
+        Ajuda a evitar erro e proteger o aparelho.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Lei usada pelo multímetro</h3>
+        
+        <h5>
+        Lei de Ohm:
+        <br>
+        V = R × I
+        </h5>
+        
+        <br><br>
+        
+        <h3>Teste de continuidade</h3>
+        
+        <h5>
+        Verifica se existe conexão elétrica entre dois pontos.
+        <br><br>
+        Se houver continuidade, o multímetro apita.
+        <br><br>
+        Usado para testar fios, identificar curtos e conferir trilhas.
+        </h5>
+        
+        <br><br>
+        
+        <h3>Como medir resistência</h3>
+        
+        <h5>
+        1. Desligar o circuito.  
+        <br>
+        2. Colocar na escala Ω.  
+        <br>
+        3. Medir nos terminais do resistor.  
+        </h5>
+        
+        <br><br>
+        
+        <h3>Como medir tensão (resistor + LED)</h3>
+        
+        <h5>
+        1. Ajustar para V (tensão DC).  
+        <br>
+        2. Medir em paralelo com o componente.  
+        <br>
+        3. Vermelha no positivo, preta no negativo.  
+        </h5>
+        
+        <br><br>
+        
+        <h3>Como medir corrente elétrica</h3>
+        
+        <h5>
+        1. Colocar na escala A.  
+        <br>
+        2. Abrir o circuito.  
+        <br>
+        3. Colocar o multímetro em série.  
+        <br>
+        4. Ligar e ler o valor.  
+        </h5>
+        
     </main>
     <br>
     <br>
